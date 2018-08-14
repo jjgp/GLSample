@@ -25,6 +25,11 @@ public class MainApplication extends Application implements ReactApplication {
           new MainReactPackage(), new GLReactPackage()
       );
     }
+
+    @Override
+    protected String getJSMainModuleName() {
+      return "index";
+    }
   };
 
   @Override
